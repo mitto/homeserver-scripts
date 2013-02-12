@@ -42,4 +42,5 @@ begin
   client = HTTPClient.new
   client.set_auth(connection_setting[:uri], connection_setting[:username], connection_setting[:password]) if connection_setting[:auth]
   client.get_content(connection_setting[:uri])
+rescue
 end
